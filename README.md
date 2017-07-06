@@ -1,7 +1,8 @@
-# XPay-android SDK 使用文档
+# XPay-android SDK
 
-##配置工程
-一、拷贝 xpay.aar 到 libs 目录
+### 配置工程
+
+一、从本页顶部进入 release 页面，下载并拷贝 xpay.aar 到 libs 目录
 
 二、build.gradle 中添加
 
@@ -17,7 +18,8 @@ dependencies {
 }  
 ```
 
-##开始接入
+### 开始接入
+
 一、获得 Charge 对象
 
 Charge 是一个包含支付信息的 JSON 字符串，是 Xpay SDK 发起支付的必要参数。该参数需要请求用户服务器获得，服务端生成 charge 的方式参考 服务端接入文档。SDK 中的 demo 获取 charge 的方法仅供用户参考。
@@ -55,8 +57,6 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 Xpay.DEBUG = true;
 ```
 
-## 注意事项
-* 请勿直接使用客户端支付结果作为最终判定订单状态的依据，支付状态以服务端为准!!!在收到客户端同步返回结果时，请向自己的服务端请求来查询订单状态。
+### 注意事项
 
-
-I
+请勿直接使用客户端支付结果作为最终判定订单状态的依据，支付状态以服务端为准!!!在收到客户端同步返回结果时，请向自己的服务端请求来查询订单状态。
