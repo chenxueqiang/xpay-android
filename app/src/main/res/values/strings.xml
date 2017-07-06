@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Xpay-android</string>
+    <string name="goods_name_hint">商品名称</string>
+    <string name="total_fee_hint">金额（单位：分）</string>
+    <string name="wap">wap 支付</string>
+</resources>

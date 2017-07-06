@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/goods_name_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/goods_name_hint"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/total_fee_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/total_fee_hint"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/wap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wap" />
+
+</LinearLayout>
