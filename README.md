@@ -2,19 +2,11 @@
 
 ### 配置工程
 
-一、从本页顶部进入 release 页面，下载并拷贝 xpay.aar 到 libs 目录
-
-二、build.gradle 中添加
+build.gradle 中添加
 
 ```
-repositories {  
-    flatDir {  
-        dirs 'libs'  
-    }  
-}  
-
 dependencies {  
-    compile(name:'xpay', ext:'aar')  
+    compile 'com.gexne.xpay:xpay:0.1'
 }  
 ```
 
